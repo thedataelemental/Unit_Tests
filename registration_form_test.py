@@ -17,7 +17,7 @@ class TestNewData(unittest.TestCase):
 				'Taken Name', '', '')
 				
 	# Check for error upon entering already-taken phone number
-	def	test_taken_phone(self):
+	def test_taken_phone(self):
 		self.assertRaises\
 			(ValueError, check_client_data, \
 				'', '1234567890', '')
